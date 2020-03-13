@@ -16,15 +16,15 @@
 //   </div>
 // </div>
 //
-// Create a card for each of the articles and add the card to the DOM.
 
+// Create a card for each of the articles and add the card to the DOM.
 const attachCardsHere = document.querySelector(".cards-container");
 //axios start
 
 axios
     .get("https://lambda-times-backend.herokuapp.com/articles")
     .then(response => {
-        console.log(response);
+        // console.log(response);
         // console.log(response.data.articles);
 
         //make an array for each different topic.
@@ -76,7 +76,7 @@ axios
                     //dont forget to return the function!!!!
                     return card;
                 }
-                console.log(cardMaker(theActualInfomation));
+                // console.log(cardMaker(theActualInfomation));
                 attachCardsHere.append(cardMaker(theActualInfomation));
             });
         });

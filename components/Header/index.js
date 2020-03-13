@@ -23,7 +23,8 @@ function Header() {
     date.classList.add("date");
     temp.classList.add("temp");
     //textContent
-    date.textContent = "SMARCH 28, 2019";
+
+    date.textContent = new Date();
     heading1.textContent = "Lambda Times";
     temp.textContent = "98°";
     //glueing them together
