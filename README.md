@@ -29,20 +29,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 ## Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
-   The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+    The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
 
 2. What is an event?
-   JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
+
+    JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
 
 3. What is an event listener?
-   An event listener is a procedure or function in a computer program that waits for an event to occur. Examples of an event are the user clicking or moving the mouse, pressing a key on the keyboard, disk I/O, network activity, or an internal timer or interrupt.
+
+    An event listener is a procedure or function in a computer program that waits for an event to occur. Examples of an event are the user clicking or moving the mouse, pressing a key on the keyboard, disk I/O, network activity, or an internal timer or interrupt.
 
 4. Why would we convert a NodeList into an Array?
-   A NodeList object is basically a collection of DOM nodes extracted from the HTML document. An array is a special data-type in JavaScript, that can store a collection of arbitrary elements.
-   More functions apply to an array.
+
+    A NodeList object is basically a collection of DOM nodes extracted from the HTML document. An array is a special data-type in JavaScript, that can store a collection of arbitrary elements.
+    More functions apply to an array.
 
 5. What is a component?
-   Web components is a set of standards to make self-contained components: custom HTML-elements with their own properties and methods, encapsulated DOM and styles.
+
+    Web components is a set of standards to make self-contained components: custom HTML-elements with their own properties and methods, encapsulated DOM and styles.
 
 ---
 
