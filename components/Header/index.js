@@ -9,4 +9,29 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
-function Header() {}
+//getting where I want to append all this now
+const attachHeaderHere = document.querySelector(".header-container");
+
+function Header() {
+    //creating elements
+    const header = document.createElement("div"),
+        date = document.createElement("span"),
+        heading1 = document.createElement("h1"),
+        temp = document.createElement("span");
+    //adding classes
+    header.classList.add("header");
+    date.classList.add("date");
+    temp.classList.add("temp");
+    //textContent
+
+    date.textContent = new Date();
+    heading1.textContent = "Lambda Times";
+    temp.textContent = "98°";
+    //glueing them together
+    header.append(date, heading1, temp);
+    //attach to document
+    attachHeaderHere.append(header);
+    // console.log(header);
+    return Header;
+}
+Header();

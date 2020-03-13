@@ -17,3 +17,21 @@
     <div class="right-button"> > </div>
   </div>
 */
+const attachCarouselHere = document.querySelector(".carousel-container");
+function scroller() {
+    const leftBtn = document.createElement("div"),
+        mtn = document.createElement("img"),
+        comp = document.createElement("img"),
+        trees = document.createElement("img"),
+        turntable = document.createElement("img"),
+        rightBtn = document.createElement("div"),
+        carousel = document.createElement("div");
+    mtn.src = "./assets/carousel/mountains.jpeg";
+    comp.src = "./assets/carousel/computer.jpeg";
+    treessrc = "./assets/carousel/trees.jpeg";
+    turntable.src = "./assets/carousel/turntable.jpeg";
+    carousel.append(leftBtn, mtn, comp, trees, turntable, rightBtn);
+
+    return carousel;
+}
+attachCarouselHere(scroller());
