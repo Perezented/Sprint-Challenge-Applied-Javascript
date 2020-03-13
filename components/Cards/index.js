@@ -26,26 +26,33 @@ axios
     .then(response => {
         console.log(response);
         // console.log(response.data.articles);
+
+        //make an array for each different topic.
         const artArray = [],
             javascript = [],
             bootstrap = [],
             technology = [],
             jquery = [],
             node = [];
+        //push all the subArrays into the main array.
         artArray.push(javascript, bootstrap, technology, jquery, node);
+        //then gather the information for each topic.
         javascript.push(response.data.articles.javascript);
         bootstrap.push(response.data.articles.bootstrap);
         technology.push(response.data.articles.technology);
         jquery.push(response.data.articles.jquery);
         node.push(response.data.articles.node);
-        console.log(javascript[0][0].headline);
+        //check where I can retrieve the information
+        // console.log(javascript[0][0].headline);
         // console.log(artArray);
-        artArray.forEach((value, index, array) => {
+
+        //forEach item in the array, i want to get the actual information I need for each array
+        artArray.forEach(value => {
             const allArrays = value[0];
             allArrays.forEach((theActualInfomation, i, a) => {
-                console.log(theActualInfomation);
+                // console.log(theActualInfomation);
 
-                //function creation
+                //function creation for each tile.
                 function cardMaker(data) {
                     const card = document.createElement("div"),
                         headline = document.createElement("div"),
@@ -63,7 +70,9 @@ axios
                     img.src = data.authorPhoto;
                     byName.textContent = `By ${data.authorName}`;
                     //attaching
-                    card.append(headline, author, imgContainer, img, byName);
+                    card.append(headline, author);
+                    author.append(imgContainer, byName);
+                    imgContainer.append(img);
                     //dont forget to return the function!!!!
                     return card;
                 }
@@ -71,11 +80,4 @@ axios
                 attachCardsHere.append(cardMaker(theActualInfomation));
             });
         });
-
-        // function articleToCard(array) {
-        //     array.forEach((element, index, array) => {
-        //         console.log(element[index], index);
-        //     });
-        // }
-        // articleToCard(artArray);
     });
