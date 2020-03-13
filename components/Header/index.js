@@ -30,7 +30,7 @@ function Header() {
     header.append(date, heading1, temp);
     //attach to document
     attachHeaderHere.append(header);
-    console.log(header);
+    // console.log(header);
     return Header;
 }
 Header();
